@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Elektronický podpis</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(206, 246, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="otevriButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 213, 230);</string>
+    </property>
+    <property name="text">
+     <string>Vytvorit podpis</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ulozButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 213, 230);</string>
+    </property>
+    <property name="text">
+     <string>Ověrit podpis</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>16</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NazevText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>85</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nazev:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TypText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>125</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Typ:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CestaText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>165</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cesta:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="VelikostText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>205</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Velikost:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Nazev">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>81</y>
+      <width>531</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Typ">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>127</y>
+      <width>531</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cesta">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>160</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Velikost">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>200</y>
+      <width>551</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generovat">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 213, 230);</string>
+    </property>
+    <property name="text">
+     <string>Generovat klíče</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DatumText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>245</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Datum vytvoření:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Datum">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>240</y>
+      <width>551</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DatumText_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>285</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poslední změna:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Zmena">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>280</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="StavText">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>25</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>STAV:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Stav">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>621</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Žádný záznam</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>60</y>
+      <width>691</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Konec">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 213, 230);</string>
+    </property>
+    <property name="text">
+     <string>Ukončit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
